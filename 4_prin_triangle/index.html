@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Print Triangle</title>
+</head>
+
+<body>
+	<h1>Print Triangle</h1>
+	<script>
+		// ______ DEMO ______
+		// function printTriangle() {
+		//     console.log("    #");
+		//     console.log("   # #");
+		//     console.log("  # # #");
+		//     console.log(" # # # #");
+		//     console.log("# # # # #");
+		// }
+		// printTriangle();
+
+		function printTriangle() {
+			for (let i = 1; i <= 5; i++) {
+				let empt = "";
+				let sym = "";
+				for (let j = 1; j <= (5 - i); j++) {
+					empt = empt + " ";
+				}
+				for (let k = 1; k <= i; k++) {
+					sym = sym + "# ";
+				}
+				console.log(empt + sym);
+			}
+		}
+		printTriangle();
+	</script>
+</body>
+
+</html>

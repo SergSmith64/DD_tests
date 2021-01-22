@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task-5-Array</title>
+</head>
+
+<body>
+	<h1>Task-5-Working-with-array</h1>
+	<script>
+		var arr = new Array(5);
+
+		function fillArray() {
+			// code
+			for (x = 0; x < arr.length; x++) {
+				function randomInteger(min, max) {
+					let rand = min + Math.random() * (max + 1 - min);
+					arr[x] = Math.floor(rand);
+					return arr[x];
+				}
+				randomInteger(-100, 100);
+			}
+			console.log("_arr__", arr);
+		}
+		fillArray();
+
+
+		function replaceFromArray() {
+			// code
+			for (x = 0; x < arr.length; x++)
+				if (arr[x] < 0) {
+					arr[x] = 0
+				}
+			console.log("_arr после замены на нули__", arr);
+		}
+		replaceFromArray();
+
+
+		function addToArray() {
+			// code ____________ использую push
+			var arrNew = [];
+			// arrNew = arr.slice();
+
+			var count = 0;
+			for (x = 0; x < arr.length; x++) {
+				var addElem = arr[x];
+				if (addElem == 0) {
+					// console.log("_нашелся первый НОЛЬ");
+					count++;
+				}
+				if (count == 2) {
+					arrNew.push(addElem);
+					arrNew.push(-1);
+					count = 0;
+					// console.log("__обнуляю COUNT = ", count);
+				} else {
+					arrNew.push(addElem);
+				}
+			}
+			console.log("_arrNew__", arrNew);
+		}
+		addToArray()
+	</script>
+</body>
+
+</html>

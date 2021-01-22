@@ -1,0 +1,45 @@
+.stepper__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stepper__wrapper .stop__first {
+  stop-color: #686868;
+}
+
+.stepper__wrapper .stop__second {
+  stop-color: #B3B3B3;
+}
+
+.stepper__wrapper .stop__third {
+  stop-color: #686868;
+}
+
+.stepper__wrapper li.active .stop__first {
+  stop-color: #2EA239;
+}
+
+.stepper__wrapper li.active .stop__second {
+  stop-color: #62FD71;
+}
+
+.stepper__wrapper li.active .stop__third {
+  stop-color: #2EA239;
+}
+
+.stepper__text {
+  font-family: Roboto;
+  font-size: 22px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.stepper__text:hover {
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
+}
+/*# sourceMappingURL=stepper.css.map */

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tasks-1-2-3</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./page/index.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<section class="section-1">
+			<div class="menu">
+				<span><a href="#" class="menu__item">Элемент меню</a></span>
+				<span><a href="#" class="menu__item">Элемент меню с наведением</a></span>
+				<span><a href="#" class="menu__item">Еще один элемент у которого очень длинный текст</a></span>
+				<span><a href="#" class="menu__item">Еще один элемент</a></span>
+				<span><a href="#" class="menu__item">Еще один элемент</a></span>
+			</div>
+		</section>
+
+
+		<section class="section-2">
+			<form action="handler.php">
+				<h3 class="form__head">Регистрация</h3>
+				<div class="form__divider">
+					<hr>
+				</div>
+
+				<div class="form__content">
+					<div class="form__group">
+						<label>E-mail</label>
+						<input type="email" name="email" placeholder="example@site.domain" autofocus required>
+					</div>
+
+					<div class="form__group_row">
+						<div class="form__group">
+							<label>Пароль</label>
+							<input type="password" name="password" placeholder="password" required>
+						</div>
+						<div class="form__gap"></div>
+						<div class="form__group">
+							<label>Повторите пароль</label>
+							<input type="password" name="password" placeholder="password" required>
+						</div>
+					</div>
+
+					<div class="form__group">
+						<label>ФИО</label>
+						<input type="text" name="full-name" placeholder="Игорев Игорь Игоревич" required>
+					</div>
+					<div class="form__group_age">
+						<label>Возраст</label>
+						<input type="number" min="1" max="99" name="num" placeholder="18" required>
+					</div>
+				</div>
+
+				<div class="form__divider">
+					<hr>
+				</div>
+				<div class="form__group_buttons">
+					<button type="submit" id="submit" class="button-submit">Отправить</button>
+					<button type="reset" id="reset" class="button-reset">Отмена</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="section-3">
+			<ul class="stepper__wrapper">
+
+				<li>
+					<a href="#">
+						<svg width="310" height="60" viewBox="0 0 310 60" fill="white" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0H300L310 30L300 60H0V0Z" fill="url(#paint1_linear)" />
+							<defs>
+								<linearGradient id="paint1_linear" x1="155" y1="0" x2="155" y2="60" gradientUnits="userSpaceOnUse">
+									<stop class="stop__first" offset="0.0" />
+									<stop class="stop__second" offset="0.505208" />
+									<stop class="stop__third" offset="1" />
+								</linearGradient>
+							</defs>
+							<text x="123" y="35" class="stepper__text">Шаг 1</text>
+						</svg>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<svg width="310" height="60" viewBox="0 0 310 60" fill="white" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0H300L310 30L300 60H0L10 30L0 0Z" fill="url(#paint2_linear)" />
+							<defs>
+								<linearGradient id="paint2_linear" x1="155" y1="0" x2="155" y2="60" gradientUnits="userSpaceOnUse">
+									<stop class="stop__first" offset="0.0" />
+									<stop class="stop__second" offset="0.505208" />
+									<stop class="stop__third" offset="1" />
+								</linearGradient>
+							</defs>
+							<text x="123" y="35" class="stepper__text">Шаг 2</text>
+						</svg>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<svg width="300" height="60" viewBox="0 0 300 60" fill="white" xmlns="http://www.w3.org/2000/svg">
+							<path d="M300 0H0L10 30L0 60H300V0Z" fill="url(#paint3_linear)" />
+							<defs>
+								<linearGradient id="paint3_linear" x1="150" y1="0" x2="150" y2="60" gradientUnits="userSpaceOnUse">
+									<stop class="stop__first" offset="0.0" />
+									<stop class="stop__second" offset="0.505208" />
+									<stop class="stop__third" offset="1" />
+								</linearGradient>
+							</defs>
+							<text x="123" y="35" class="stepper__text">Шаг 3</text>
+						</svg>
+					</a>
+				</li>
+
+			</ul>
+
+		</section>
+
+	</div>
+
+	<script src="./script.js"></script>
+</body>
+
+</html>

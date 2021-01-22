@@ -1,0 +1,22 @@
+@import url(../vendor/normalize.css);
+@import url(../components/menu/menu.css);
+@import url(../components/form/form.css);
+@import url(../components/stepper/stepper.css);
+
+body {
+	background-color: #e5e5e5;
+	min-width: 320px;
+}
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+section {
+	margin-top: 2rem;
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+}
